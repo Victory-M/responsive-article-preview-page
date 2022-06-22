@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 44rem;
+    height: 18rem;
+    border-radius: .7rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+
+.furniture img{
+width: 18.5rem;
+border-radius: .7rem 0 0 .7rem;
+}
+
+/* text */
+
+.text-wrapper{
+    margin: 2rem 3rem 2rem -1rem;
+     
+}
+
+.text{
+  margin-bottom: 1.1rem; 
+}
+
+h1{
+    font-size: 1.1rem;
+    color:  hsl(217, 19%, 34%);
+    margin-bottom: 1rem;
+}
+
+.text p{
+    color: hsl(214, 17%, 49%);
+    font-size:.76rem ;
+    line-height: 1.2rem;
+    margin-bottom: 1.8rem;
+}
+
+
+/* michelle */
+.michelle-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.michelle{
+    display: flex;
+}
+
+.michelle img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+h2{
+    font-size: .9rem;
+    color:  hsl(217, 19%, 35%);
+    margin-bottom: .2rem;
+}
+
+.michelle-label p{
+     color: hsl(214, 17%, 49%);
+     font-size: .75rem;
+}
+
+.dhare{
+    position: relative;   
+}
+
+.share{  
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.share i {
+    transform: translate(53%,30%);
+    color: hsl(217, 89%, 22%);
+   font-size: 1.02rem;
+}
+
+.share:hover{
+ background-color: hsl(217, 19%, 20%);
+}
+
+.share i:hover{
+    color: aliceblue;
+}
+
+.hide-container{
+    display: none;
+    position: absolute;
+    top: -5.9rem;
+    left: -5.5rem;
+}
+
+/* javascript */
+.active .hide-container{
+    display: block;
+}
+
+.hide-wrapper{
+    z-index: 2;
+    position: relative;
+}
+
+.rectangle{
+    background-color: hsl(217, 19%, 20%);
+    display: flex;
+    border-radius: .5rem;
+    padding: 1.2rem 1.5rem ;
+    width: 14rem;
+    
+}
+h3{
+    margin-right: 1rem;
+    color: hsl(212, 23%, 69%);
+    font-weight: 200;
+    font-size: .82rem;
+    letter-spacing: .5rem;
+}
+.icons {
+    display: flex;
+    
+}
+.icons img{
+    margin-right: .6rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.triangle{
+    width: 3rem;
+    height: 1rem;
+    background-color: hsl(217, 19%, 20%);
+   clip-path: polygon(50% 0%, 20% 100%, 80% 100%);
+   transform: rotate(180deg);
+    z-index: 1;
+    position: absolute;
+    left: 5rem;
+}
+.hidden-share{
+    display: none;
+}
+
+/* .hide{
+    display: none;
+} */
+
+/* media screen */
+
+@media(max-width:850px){
+    .card{
+    width: 18.5rem;
+    height: 35rem;
+    display: grid;
+    grid-template-columns:1fr;
+    }
+
+    .furniture img{
+    content: url("/images/drawer-mobile.jpg"); 
+    border-radius:.7rem .7rem 0 0;
+   }
+   .text-wrapper{
+    margin: 0rem auto -1rem ;   
+    padding: 1rem 1.5rem;  
+   }
+
+   h1{
+    font-size: 1rem;
+   }
+
+   .text p{
+       font-size: .85rem;
+   }
+
+   .rectangle{
+    background-color: hsl(217, 19%, 20%);
+    display: flex;
+    justify-content: space-between;
+    border-radius:0 0 .5rem .5rem;
+    padding: 1.2rem 1.5rem ;
+    width: 18.5rem;
+}
+
+.triangle{
+    display: none;
+}
+
+h3{
+    margin-right: -1.5rem;
+}
+
+.hidden-share{
+    display: block;
+   background-color: hsl(212, 23%, 44%);
+    width: 1.62rem;
+    height: 1.62rem;
+    border-radius: 50%; 
+}
+
+.hidden-share i{
+    transform: translate(39%,8% );
+    color: white;
+    font-size: .87rem;
+}
+.hide-container{
+    position: absolute;
+    top: -.31rem;
+    left: -15rem;
+}
+
+}
